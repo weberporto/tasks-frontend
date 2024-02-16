@@ -4,6 +4,7 @@
 	<title>Tasks</title>
 	<link rel="stylesheet" href="/tasks/css/bootstrap.min.css">
 	<script src="/tasks/js/bootstrap.min.js"></script>
+	
 </head>
 
 <body class="bg-light">
@@ -14,7 +15,7 @@
 		</div>
 		<p class="alert alert-success" role="alert" th:if="${success != null}" th:text="${success}" id="message" />
 		<div th:switch="${todos.size()}">
-    		<h2 th:case="0">No tasks... enjoy your day!</h2>
+    		<h2 th:case="0">No tasks... enjoy your day!!!</h2>
         	<div th:case="*">
 				<table id="todoTable" class="table table-hover">
 					<thead class="thead-dark">
